@@ -13,11 +13,11 @@ export const shareImgPost = (file, uid) => {
   const catchError = () => {
     const progress = document.querySelector('.progress');
     progress.classList.add('errorMessage');
-    progress.innerText = '⚠️ Error al cargar foto';
+    progress.innerText = '⚠️ Ups, esta imagen es demasiado grande, debe ser menor a 5mb.';
     setTimeout(() => {
       progress.parentNode.classList.remove('showProgress');
       progress.classList.remove('errorMessage');
-    }, 2500);
+    }, 3000);
   };
 
   const fileReady = () => {
