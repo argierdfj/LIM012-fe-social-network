@@ -12,8 +12,12 @@ export const shareImgPost = (file, uid) => {
 
   const catchError = () => {
     const progress = document.querySelector('.progress');
-    progress.parentNode.innerText = '⚠️ Error al cargar foto';
-    // console.log(err.message);
+    progress.classList.add('errorMessage');
+    progress.innerText = '⚠️ Error al cargar foto';
+    setTimeout(() => {
+      progress.parentNode.classList.remove('showProgress');
+      progress.classList.remove('errorMessage');
+    }, 2500);
   };
 
   const fileReady = () => {

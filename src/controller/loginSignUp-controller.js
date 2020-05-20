@@ -45,19 +45,19 @@ export const authEmailPass = (email, password) => {
       const alertLogInSignUp = document.querySelector('#alertLogInSignUp');
       switch (errorCode) {
         case 'auth/invalid-email':
-          alertLogInSignUp.innerHTML = 'Correo inválido';
+          alertLogInSignUp.innerHTML = '⚠️ Correo inválido';
           break;
         case 'auth/user-disabled':
-          alertLogInSignUp.innerHTML = 'Comuníquese con el Administrador';
+          alertLogInSignUp.innerHTML = '⚠️ Comuníquese con el Administrador';
           break;
         case 'auth/user-not-found':
-          alertLogInSignUp.innerHTML = 'Usuario no registrado';
+          alertLogInSignUp.innerHTML = '⚠️ Usuario no registrado';
           break;
         case 'auth/wrong-password':
-          alertLogInSignUp.innerHTML = 'El correo o la contraseña ingresados son incorrectos';
+          alertLogInSignUp.innerHTML = '⚠️ El correo o la contraseña ingresados son incorrectos';
           break;
         default:
-          alertLogInSignUp.innerHTML = 'Ha ocurrido un error inesperado';
+          alertLogInSignUp.innerHTML = '⚠️ Ha ocurrido un error inesperado';
           break;
       }
     });

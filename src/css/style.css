@@ -496,6 +496,16 @@ header label:hover {
     margin-top: 0 !important;
 }
 
+.errorMessage {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e43a3a;
+    height: 18px;
+    padding: 0 2%;
+    background-color: rgb(195, 189, 189);
+    text-align: left;
+}
+
 @media (max-width:768px) {
 
     /*----------------ESTILOS PARA EL MENÚ DESPLEGABLE----------------*/
