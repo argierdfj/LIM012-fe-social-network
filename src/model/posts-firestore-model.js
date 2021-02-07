@@ -55,7 +55,7 @@ export const readPostHome = (callback) => {
 };
 
 // READ POSTS PROFILE
-export const readPostProfile = (callback, uid) => {
+export const readPostProfile = (uid, callback) => {
   firebase.firestore().collection('posts').where('uid', '==', uid)
     .orderBy('orderDate', 'desc')
     .onSnapshot((querySanpshot) => {

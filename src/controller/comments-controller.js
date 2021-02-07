@@ -51,6 +51,7 @@ export const updateCommentOnClick = () => {
         evento.preventDefault();
         const idComment = comments.getAttribute('idComment');
         const textComment = document.querySelector(`#textComment-${idComment}`);
+        // console.log(textComment);
         const iconSaveComment = textComment.parentNode.querySelector('.save-comment');
         textComment.contentEditable = 'true';
         textComment.focus();

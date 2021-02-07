@@ -47,7 +47,7 @@ export const updateUserName = (nodo) => {
             updateUserDataName(user.id, nam)
               .then(() => {
                 localStorage.setItem('userName', nam);
-                readPostProfile(updateDataUser, firebase.auth().currentUser.uid);
+                readPostProfile(firebase.auth().currentUser.uid, updateDataUser);
               })
               .catch(() => {});
           }

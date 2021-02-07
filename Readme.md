@@ -62,7 +62,7 @@ Arrays y objetos.
 ### DOM y Web APIs
 
 * [x] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-* [ ] [History API](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
+* [x] [History API](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
 * [x] [`localStorage`]
 
 ### Javascript
@@ -91,7 +91,7 @@ Arrays y objetos.
 
 * [x] Branches
 * [x] Pull Requests
-* [ ] Tags
+* [x] Tags
 
 ### Organización en Github
 

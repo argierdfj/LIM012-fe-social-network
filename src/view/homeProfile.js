@@ -144,7 +144,7 @@ export default () => {
 
   // PARA MOSTRAR TODOS LOS POSTS
   readPostHome(publicPosts);
-  readPostProfile(postProfile, firebase.auth().currentUser.uid);
+  readPostProfile(firebase.auth().currentUser.uid, postProfile);
 
   const photoPost = sectionMain.querySelector('#photoPost');
   const btnSharePost = sectionMain.querySelector('#btnSharePost');

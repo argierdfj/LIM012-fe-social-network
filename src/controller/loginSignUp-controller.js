@@ -95,16 +95,16 @@ export const authAccountGoogle = () => {
       const alertLogInSignUp = document.querySelector('#alertLogInSignUp');
       switch (errorCode) {
         case 'auth/account-exists-with-different-credential':
-          alertLogInSignUp.innerHTML = '⚠️ Ya existe una cuenta con esta dirección de correo';
+          alertLogInSignUp.innerHTML = 'Ya existe una cuenta con esta dirección de correo';
           break;
         case 'auth/credential-already-in-use':
-          alertLogInSignUp.innerHTML = '⚠️ La cuenta corresponde a una credencial existente';
+          alertLogInSignUp.innerHTML = 'La cuenta corresponde a una credencial existente';
           break;
         case 'auth/email-already-in-use':
-          alertLogInSignUp.innerHTML = '⚠️ El correo corresponde a una credencial existente';
+          alertLogInSignUp.innerHTML = 'El correo corresponde a una credencial existente';
           break;
         default:
-          alertLogInSignUp.innerHTML = '⚠️ Error al autenticar con Google';
+          alertLogInSignUp.innerHTML = 'Error al autenticar con Google';
           break;
       }
     });
@@ -123,16 +123,16 @@ export const authAccountFacebook = () => {
       const alertLogInSignUp = document.querySelector('#alertLogInSignUp');
       switch (errorCode) {
         case 'auth/account-exists-with-different-credential':
-          alertLogInSignUp.innerHTML = '⚠️ Ya existe una cuenta con esta dirección de correo';
+          alertLogInSignUp.innerHTML = 'Ya existe una cuenta con esta dirección de correo';
           break;
         case 'auth/credential-already-in-use':
-          alertLogInSignUp.innerHTML = '⚠️ La cuenta corresponde a una credencial existente';
+          alertLogInSignUp.innerHTML = 'La cuenta corresponde a una credencial existente';
           break;
         case 'auth/email-already-in-use':
-          alertLogInSignUp.innerHTML = '⚠️ El correo corresponde a una credencial existente';
+          alertLogInSignUp.innerHTML = 'El correo corresponde a una credencial existente';
           break;
         default:
-          alertLogInSignUp.innerHTML = '⚠️ Error al autenticar con Facebook';
+          alertLogInSignUp.innerHTML = 'Error al autenticar con Facebook';
           break;
       }
     });
@@ -151,7 +151,7 @@ export const createUser = (email, password, names) => {
       };
       res.user.sendEmailVerification(configuration)
         .catch(() => {
-          alertLogInSignUp.innerHTML = '⚠️ Ha ocurrido un error al crear la cuenta';
+          alertLogInSignUp.innerHTML = 'Ha ocurrido un error al crear la cuenta';
         });
       alertLogInSignUp.classList.add('alertSignUpOk');
       alertLogInSignUp.innerHTML = 'Cuenta creada satisfactoriamente, se le ha enviado un correo para validar su cuenta';
